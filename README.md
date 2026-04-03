@@ -1,2 +1,2 @@
-# intruducao_a_programacao
+# introducao_a_programacao
 Iniciando programação
