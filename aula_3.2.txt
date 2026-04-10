@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+	float nota;
+	char *resultado;
+	
+	printf("Digite sua nota: ");
+	scanf("%f", &nota);
+	
+	resultado = nota >= 6 ? (nota == 10 ? "Aprovado com nota maxima" : "Aprovado")  : "Reprovado";
+	
+	printf("%s\n", resultado);
+	
+	return 0;
+}
+
+========================================================================
+
+#include <stdio.h>
+
+int main () {
+	int idade;
+	
+	printf("Digite sua idade: ");
+	scanf("%d", &idade);
+	
+	if (idade >= 18) {
+		printf("Maior de idade\n");
+	}
+	
+	return 0;
+}
+
+
+================================================================	
