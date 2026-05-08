@@ -1,0 +1,114 @@
+#include <iostream>
+
+int main () {
+	int idade;
+	
+	std::cout << "Digite sua idade: ";
+	std::cin >> idade;
+	std::cout << "Idade digitada: " << idade << std::endl;
+	
+	return 0;
+}
+
+
+
+=============================================================================
+
+#include <iostream>
+
+int main(){
+	int fatorial = 6;
+	fatorial *= 5;
+	fatorial *= 4;
+	fatorial *= 3;
+	fatorial *= 2;
+	fatorial *=1;
+	std::cout << fatorial <<std::endl;
+}
+
+
+============================================================================
+
+
+#include <iostream>
+
+int main(){
+	int n;
+	std::cout << "Digite um numero inteiro: ";
+	std::cin >> n;
+	
+	unsigned long long fatorial = 1;
+	for (int i = 1; i <= n; ++i){
+		fatorial *= i;
+	}
+	
+	std::cout << "O fatorial de " << n << " e: " << fatorial << std::endl;
+	
+	return 0;
+}
+
+
+============================================================================
+
+
+#include <iostream>
+
+int main(){
+	float cont, num;
+	std::cout << "numero? ";
+	std::cin >> num;
+	cont = 1;
+	while (cont < 10){
+		std::cout << num << " x " << cont << " = " << num * cont <<
+		std::endl;
+		cont++;
+	}
+}
+
+============================================================================
+
+#include <iostream>
+
+int main(){
+	int cont, num;
+	std::cout << "numero? ";
+	std::cin >> num;
+	cont = 1;
+	do{
+		std::cout << num << " x " << cont << " = " << num * cont << std::endl;
+		cont++;
+	}while (cont < 10);
+}
+
+=============================================================================
+
+
+
+
+#include <iostream>
+
+using namespace std;
+int main(){
+	int i;
+	float y, x, aux;
+	i = 0;
+	cout << "Qual o valor de y? ";
+	cin >> y;
+	if (y==0){
+		cout << "Raiz de y=0" << endl;
+	} else {
+		if (y < 0) {
+			cout << "Nao e possivel fazer o calculo!" << endl;
+		} else {
+			x = y / 2;
+			aux = 0;
+			while (x != aux) {
+				aux = x;
+				x = x - (x * x - y) / (2 * x);
+				i++;
+			}
+			cout << "Raiz de y=" << x << endl;
+			cout << "Numero de repeticoes: " << i << endl;
+		}
+	}
+}
